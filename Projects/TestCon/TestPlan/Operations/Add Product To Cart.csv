@@ -1,0 +1,8 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+//1,Browser,To Test the Accessibility of the Page,testAccessibility,@Page,,
+2,Product To Select,Set object [<Object>] property  as [<Data>] at runtime,setObjectProperty,Browser Data:Product,"#productName",Purchase
+3,Product To Select,"Click the [<Object>] ",Click,,,Purchase
+4,add-to-cart,"Click the [<Object>] ",Click,,,Purchase
+5,Product added to shopping,"Click the [<Object>] ",Click,,,Purchase
+6,nav-cart,"Click the [<Object>] ",Click,,,Purchase
+7,product-title,Assert if [<Object>] contains the text [<Data>],assertElementContainsText,Browser Data:Product,,Purchase

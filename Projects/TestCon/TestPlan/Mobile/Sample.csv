@@ -1,0 +1,21 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,[Add to Cart],"Tap the [<Object>] ",Tap,,,Home Page
+2,Cart icon,"Tap the [<Object>] ",Tap,,,Home Page
+3,Product Name,Assert if [<Object>]'s Text Equals [<Data>],assertElementTextEquals,Mobile Data:Product Name,,Cart Page
+4,Proceed to Checkout,"Tap the [<Object>] ",Tap,,,Cart Page
+5,Email,Enter the value [<Data>] in the Field [<Object>],Set,Mobile Data:Email,,Sign In Page
+6,Password,Enter the value [<Data>] in the Field [<Object>],Set,Mobile Data:Password,,Sign In Page
+*7,Login,"Tap the [<Object>] ",Tap,,,Sign In Page
+8,Welcome Message,Assert if [<Object>]'s Text Equals [<Data>],assertElementTextEquals,Mobile Data:Message,,Sign In Page
+9,Proceed to Checkout,"Tap the [<Object>] ",Tap,,,Sign In Page
+10,State,Enter the value [<Data>] in the Field [<Object>],Set,Mobile Data:State,,Address
+11,Post Code,Enter the value [<Data>] in the Field [<Object>],Set,Mobile Data:Post Code,,Address
+12,Proceed to Checkout,"Tap the [<Object>] ",Tap,,,Address
+13,Payment Method,"Tap the [<Object>] ",Tap,,,Payment
+14,Credit Card,"Tap the [<Object>] ",Tap,,,Payment
+15,Account Name,Enter the value [<Data>] in the Field [<Object>],Set,Mobile Data:Account Name,,Payment
+16,Synthetic Data,Generate a random IBAN (International Bank Account Number),iban,Mobile Data:Account Number,,
+17,Account Number,Enter the value [<Data>] in the Field [<Object>],Set,Mobile Data:Account Number,,Payment
+18,Validate,"Tap the [<Object>] ",Tap,,,Payment
+19,Payment Status,Assert if [<Object>]'s Text Equals [<Data>],assertElementTextEquals,Mobile Data:Status,,Payment
+20,Confirm Checkout,"Tap the [<Object>] ",Tap,,,Payment

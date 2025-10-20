@@ -1,0 +1,3 @@
+Scenario,Flow,Iteration,SubIteration,Fname,lname,productname
+SauceDemo,Bike,1,1,Bobbi,Becker,add-to-cart-sauce-labs-bike-light
+SauceDemo,Jacket,1,1,Cecil,Moore,add-to-cart-sauce-labs-fleece-jacket

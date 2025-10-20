@@ -1,0 +1,23 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Browser,Open the Url [<Data>] in the Browser,Open,@https://www.lloydsbank.com/mortgages/calculators-and-tools.html,,
+2,Reject all,"Click the [<Object>] ",Click,,,Lloyds
+3,First time buyer calculator,"Click the [<Object>] ",Click,,,Lloyds
+4,Reject all,"Click the [<Object>] ",Click,,,Lloyds
+5,I'm viewing properties,"Click the [<Object>] ",Click,,,Lloyds
+6,Just me,"Click the [<Object>] ",Click,,,Lloyds
+7,Continue,"Click the [<Object>] ",Click,,,Lloyds
+8,See how much I could borrow,"Click the [<Object>] ",Click,,,Lloyds
+9,Continue,"Click the [<Object>] ",Click,,,Lloyds
+10,Employed,"Click the [<Object>] ",Click,,,Lloyds
+11,How much do you earn each,"Click the [<Object>] ",Click,,,Lloyds
+12,How much do you earn each,Enter the value [<Data>] in the Field [<Object>],Fill,@100000,,Lloyds
+13,No,"Click the [<Object>] ",Click,,,Lloyds
+14,Continue,"Click the [<Object>] ",Click,,,Lloyds
+15,2,"Click the [<Object>] ",Click,,,Lloyds
+//16,Do you have any credit card,"Click the [<Object>] ",Click,,,Lloyds
+//17,Do you have any credit card,Enter the value [<Data>] in the Field [<Object>],Fill,@0,,Lloyds
+//18,Do you have any loans you pay,"Click the [<Object>] ",Click,,,Lloyds
+//19,Do you have any loans you pay,Enter the value [<Data>] in the Field [<Object>],Fill,@0,,Lloyds
+//20,Do you have any other monthly,"Click the [<Object>] ",Click,,,Lloyds
+//21,Do you have any other monthly,Enter the value [<Data>] in the Field [<Object>],Fill,@5000,,Lloyds
+*22,Get results,"Click the [<Object>] ",Click,,,Lloyds

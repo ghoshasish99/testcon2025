@@ -1,0 +1,5 @@
+Execute,TestScenario,TestCase,Iteration,Status,Browser,BrowserVersion,Platform
+false,SauceDemo,Bike,Single,Passed,Chromium,Default,Any
+false,SauceDemo,Jacket,Single,Passed,Chromium,Default,Any
+true,NewScenario,ING Bank,Single,Failed,No Browser,Default,Any
+false,NewScenario,Rabo Bank,Single,Failed,No Browser,Default,Any

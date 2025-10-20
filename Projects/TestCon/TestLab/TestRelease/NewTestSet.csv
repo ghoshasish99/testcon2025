@@ -1,0 +1,3 @@
+Execute,TestScenario,TestCase,Iteration,Status,Browser,BrowserVersion,Platform
+true,Mobile,Purchase a Tool,Single,NoRun,Android,Default,Any
+true,Mobile,Sample,Single,NoRun,Android,Default,Any

@@ -1,0 +1,37 @@
+import com.microsoft.playwright.*;
+import com.microsoft.playwright.options.*;
+import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
+import java.util.*;
+
+public class Example {
+  public static void main(String[] args) {
+    try (Playwright playwright = Playwright.create()) {
+      Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions()
+        .setHeadless(false));
+      BrowserContext context = browser.newContext();
+      Page page = context.newPage();
+      page.navigate("https://www.lloydsbank.com/mortgages/calculators-and-tools.html");
+      page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Reject all")).click();
+      page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("First time buyer calculator")).click();
+      page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Reject all")).click();
+      page.getByText("I'm viewing properties").click();
+      page.getByText("Just me").click();
+      page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Continue")).click();
+      page.getByText("See how much I could borrow").click();
+      page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Continue")).click();
+      page.getByText("Employed", new Page.GetByTextOptions().setExact(true)).click();
+      page.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("How much do you earn each")).click();
+      page.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("How much do you earn each")).fill("100000");
+      page.getByText("No", new Page.GetByTextOptions().setExact(true)).click();
+      page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Continue")).click();
+      page.getByText("2", new Page.GetByTextOptions().setExact(true)).click();
+      page.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("Do you have any credit card")).click();
+      page.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("Do you have any credit card")).fill("0");
+      page.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("Do you have any loans you pay")).click();
+      page.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("Do you have any loans you pay")).fill("0");
+      page.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("Do you have any other monthly")).click();
+      page.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("Do you have any other monthly")).fill("5000");
+      page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Get results")).click();
+    }
+  }
+}

@@ -1,0 +1,31 @@
+import com.microsoft.playwright.*;
+import com.microsoft.playwright.options.*;
+import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
+import java.util.*;
+
+public class Example {
+  public static void main(String[] args) {
+    try (Playwright playwright = Playwright.create()) {
+      Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions()
+        .setHeadless(false));
+      BrowserContext context = browser.newContext();
+      Page page = context.newPage();
+      page.navigate("https://ecommerce-playground.lambdatest.io/");
+      page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Login")).click();
+      page.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("E-Mail Address")).click();
+      page.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("E-Mail Address")).fill("testaccount12345@gmail.com");
+      page.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("Password")).click();
+      page.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("Password")).fill("test123");
+      page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Login")).click();
+      page.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("Search For Products")).click();
+      page.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("Search For Products")).fill("imac");
+      page.getByText("iMac").first().click();
+      page.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("Search For Products")).click();
+      page.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("Search For Products")).fill("imac");
+      page.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("Search For Products")).press("Enter");
+      page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Search")).click();
+      page.locator(".btn.btn-cart").first().click();
+      page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Checkout ")).click();
+    }
+  }
+}

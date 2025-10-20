@@ -1,0 +1,3 @@
+Scenario,Flow,Iteration,SubIteration,Bank Name,Account Name,Account Number
+NewScenario,ING Bank,1,1,ING Bank,James Bond,1233335007
+NewScenario,Rabo Bank,1,1,Rabo Bank,John Doe,36547653476

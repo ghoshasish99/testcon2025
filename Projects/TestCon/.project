@@ -1,0 +1,158 @@
+{
+  "id" : "EuroSTAR",
+  "name" : "EuroSTAR",
+  "version" : "2.2",
+  "attributes" : [ ],
+  "tags" : [ ],
+  "_meta" : [ {
+    "type" : "attribute",
+    "name" : "scenario",
+    "desc" : "High level classification of test requirement/cases grouped together",
+    "ref" : "com.ing.datalib.model.Attribute",
+    "attributes" : [ ],
+    "tags" : [ ]
+  }, {
+    "type" : "tag",
+    "name" : "@smoke",
+    "desc" : "Non-exhaustive set of tests that aim at ensuring that the most important functions work",
+    "ref" : "com.ing.datalib.model.Tag",
+    "attributes" : [ ],
+    "tags" : [ ]
+  }, {
+    "type" : "tag",
+    "name" : "@uat",
+    "ref" : "com.ing.datalib.model.Tag",
+    "attributes" : [ ],
+    "tags" : [ ]
+  }, {
+    "type" : "tag",
+    "name" : "@load",
+    "ref" : "com.ing.datalib.model.Tag",
+    "attributes" : [ ],
+    "tags" : [ ]
+  }, {
+    "type" : "scenario",
+    "name" : "Mobile",
+    "ref" : "com.ing.datalib.model.Attribute",
+    "attributes" : [ ],
+    "tags" : [ ]
+  }, {
+    "type" : "tag",
+    "name" : "Regression",
+    "ref" : "com.ing.datalib.model.Tag",
+    "attributes" : [ ],
+    "tags" : [ ]
+  }, {
+    "type" : "scenario",
+    "name" : "Operations",
+    "ref" : "com.ing.datalib.model.Attribute",
+    "attributes" : [ ],
+    "tags" : [ ]
+  }, {
+    "type" : "scenario",
+    "name" : "Browser",
+    "ref" : "com.ing.datalib.model.Attribute",
+    "attributes" : [ ],
+    "tags" : [ ]
+  }, {
+    "type" : "scenario",
+    "name" : "API",
+    "ref" : "com.ing.datalib.model.Attribute",
+    "attributes" : [ ],
+    "tags" : [ ]
+  }, {
+    "type" : "scenario",
+    "name" : "Activities",
+    "ref" : "com.ing.datalib.model.Attribute",
+    "attributes" : [ ],
+    "tags" : [ ]
+  }, {
+    "type" : "tag",
+    "name" : "AU_smoke",
+    "ref" : "com.ing.datalib.model.Tag",
+    "attributes" : [ ],
+    "tags" : [ ]
+  }, {
+    "type" : "scenario",
+    "name" : "NewScenario",
+    "ref" : "com.ing.datalib.model.Attribute",
+    "attributes" : [ ],
+    "tags" : [ ]
+  }, {
+    "type" : "scenario",
+    "name" : "SauceDemo",
+    "ref" : "com.ing.datalib.model.Attribute",
+    "attributes" : [ ],
+    "tags" : [ ]
+  } ],
+  "data" : [ {
+    "id" : "Mobile#Purchase a Tool",
+    "name" : "Purchase a Tool",
+    "tags" : [ {
+      "value" : "AU_smoke"
+    } ],
+    "attributes" : [ {
+      "name" : "type",
+      "value" : "testcase"
+    }, {
+      "name" : "scenario",
+      "value" : "Mobile"
+    } ]
+  }, {
+    "id" : "Get-Brand",
+    "name" : "Get-Brand",
+    "tags" : [ ],
+    "attributes" : [ {
+      "name" : "scenario",
+      "value" : "API"
+    } ]
+  }, {
+    "id" : "Post-Payment",
+    "name" : "Post-Payment",
+    "tags" : [ ],
+    "attributes" : [ {
+      "name" : "scenario",
+      "value" : "API"
+    } ]
+  }, {
+    "id" : "Bike",
+    "name" : "Bike",
+    "tags" : [ ],
+    "attributes" : [ {
+      "name" : "scenario",
+      "value" : "SauceDemo"
+    } ]
+  }, {
+    "id" : "Jacket",
+    "name" : "Jacket",
+    "tags" : [ ],
+    "attributes" : [ {
+      "name" : "scenario",
+      "value" : "SauceDemo"
+    } ]
+  }, {
+    "id" : "ING Bank",
+    "name" : "ING Bank",
+    "tags" : [ ],
+    "attributes" : [ {
+      "name" : "scenario",
+      "value" : "NewScenario"
+    } ]
+  }, {
+    "id" : "Rabo Bank",
+    "name" : "Rabo Bank",
+    "tags" : [ ],
+    "attributes" : [ {
+      "name" : "scenario",
+      "value" : "NewScenario"
+    } ]
+  }, {
+    "id" : "Sample",
+    "name" : "Sample",
+    "tags" : [ ],
+    "attributes" : [ {
+      "name" : "scenario",
+      "value" : "Mobile"
+    } ]
+  } ]
+}

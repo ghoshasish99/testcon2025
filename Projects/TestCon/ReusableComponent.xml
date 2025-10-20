@@ -1,0 +1,19 @@
+<Root ref="TestCon" type="RC">
+    <Folder ref="BrowserTests">
+        <Scenario ref="Operations">
+            <TestCase exeType="Executable" ref="Open Application"/>
+            <TestCase exeType="Executable" ref="Payment"/>
+            <TestCase exeType="Executable" ref="Fill Address"/>
+            <TestCase exeType="Executable" ref="Login"/>
+            <TestCase exeType="Executable" ref="Add Product To Cart"/>
+        </Scenario>
+    </Folder>
+    <Folder ref="MobileTests">
+        <Scenario ref="Activities">
+            <TestCase exeType="Executable" ref="Payment"/>
+            <TestCase exeType="Executable" ref="Fill Address"/>
+            <TestCase exeType="Executable" ref="Login"/>
+            <TestCase exeType="Executable" ref="Add Product to Cart"/>
+        </Scenario>
+    </Folder>
+</Root>

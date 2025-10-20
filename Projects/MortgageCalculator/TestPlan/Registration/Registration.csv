@@ -1,0 +1,19 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Browser,Open the Url [<Data>] in the Browser,Open,@https://ecommerce-playground.lambdatest.io/,,
+2, My account,"Click the [<Object>] ",MouseHover,,,Registration
+3,Register,"Click the [<Object>] ",Click,,,Registration
+4,First Name*,"Click the [<Object>] ",Click,,,Registration
+5,First Name*,Enter the value [<Data>] in the Field [<Object>],Fill,@TestAccount1,,Registration
+6,Last Name*,"Click the [<Object>] ",Click,,,Registration
+7,Last Name*,Enter the value [<Data>] in the Field [<Object>],Fill,@TestAccountLastName1,,Registration
+8,E-Mail*,"Click the [<Object>] ",Click,,,Registration
+9,E-Mail*,Enter the value [<Data>] in the Field [<Object>],Fill,@testaccount12345@gmail.com,,Registration
+10,Telephone*,"Click the [<Object>] ",Click,,,Registration
+11,Telephone*,Enter the value [<Data>] in the Field [<Object>],Fill,@678123467,,Registration
+12,Password*,"Click the [<Object>] ",Click,,,Registration
+13,Password*,Enter the value [<Data>] in the Field [<Object>],Fill,@test123,,Registration
+14,Password Confirm*,"Click the [<Object>] ",Click,,,Registration
+15,Password Confirm*,Enter the value [<Data>] in the Field [<Object>],Fill,@test123,,Registration
+16,I have read and agree to the,"Click the [<Object>] ",Click,,,Registration
+17,Continue,"Click the [<Object>] ",Click,,,Registration
+18,Refactor_Object,Assert if [<Object>] contains the text [<Data>],assertElementContainsText,@Your Account Has Been Created!,,Registration

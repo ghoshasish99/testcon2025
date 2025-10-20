@@ -1,0 +1,18 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Webservice,"Set End Point ",setEndPoint,@https://api.practicesoftwaretesting.com/users/register,,
+2,Webservice,"Add Header ",addHeader,@Content-Type=application/json,,
+3,Webservice,"POST Rest Request ",postRestRequest,"{
+  ""first_name"": ""JohnX"",
+  ""last_name"": ""DoeX"",
+  ""address"": {
+    ""street"": ""Street 1"",
+    ""city"": ""City"",
+    ""state"": ""State"",
+    ""country"": ""Country"",
+    ""postal_code"": ""1234AA""
+  },
+  ""phone"": ""0987654321"",
+  ""dob"": ""1970-01-01"",
+  ""password"": ""SuperSecure@123"",
+  ""email"": ""johnX@doeX.example""
+}",,

@@ -1,0 +1,11 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Browser,Open the Url [<Data>] in the Browser,Open,@https://ecommerce-playground.lambdatest.io/,,
+2, My account,"Click the [<Object>] ",MouseHover,,,Registration
+3,Login,"Click the [<Object>] ",Click,,,Purchase
+4,E-Mail Address,"Click the [<Object>] ",Click,,,Purchase
+5,E-Mail Address,Enter the value [<Data>] in the Field [<Object>],Fill,@testaccount12345@gmail.com,,Purchase
+6,Password,"Click the [<Object>] ",Click,,,Purchase
+7,Password,Enter the value [<Data>] in the Field [<Object>],Fill,@test123,,Purchase
+8,Login_1,"Click the [<Object>] ",Click,,,Purchase
+9,Browser,Store Storage State in JSON file,StoreStorageState,@./storage.json,,
+*10,General,Wait for [<Data>] milli seconds,pause,@1,,

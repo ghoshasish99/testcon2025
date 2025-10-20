@@ -1,0 +1,5 @@
+Execute,TestScenario,TestCase,Iteration,Status,Browser,BrowserVersion,Platform
+true,API,Get-Brand,Single,Passed,No Browser,Default,Any
+true,API,Post-Payment,Single,Passed,No Browser,Default,Any
+true,Browser,Purchase a Tool,Single,Passed,Chromium,Default,Any
+true,Mobile,Purchase a Tool,Single,Failed,Android,Default,Any

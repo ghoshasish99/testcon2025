@@ -1,0 +1,23 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Browser,Open the Url [<Data>] in the Browser,Open,@https://www.saucedemo.com/,,
+2,username,"Click the [<Object>] ",Click,,,SauceDemo
+3,username,Enter the value [<Data>] in the Field [<Object>],Fill,@standard_user,,SauceDemo
+4,password,"Click the [<Object>] ",Click,,,SauceDemo
+5,password,Enter the value [<Data>] in the Field [<Object>],Fill,@secret_sauce,,SauceDemo
+6,login-button,"Click the [<Object>] ",Click,,,SauceDemo
+7,Add to Cart,Set object [<Object>] property  as [<Data>] at runtime,setObjectProperty,SauceDemo:productname,"#product",SauceDemo
+8,Add to Cart,"Click the [<Object>] ",Click,,,SauceDemo
+9,shopping-cart-link,"Click the [<Object>] ",Click,,,SauceDemo
+10,inventory-item-name,Assert if [<Object>] contains the text [<Data>],assertElementContainsText,@Sauce Labs Bike Light,,SauceDemo
+11,checkout,"Click the [<Object>] ",Click,,,SauceDemo
+12,firstName,"Click the [<Object>] ",Click,,,SauceDemo
+13,Synthetic Data,Generate a random first name,firstName,SauceDemo:Fname,,
+14,firstName,Enter the value [<Data>] in the Field [<Object>],Fill,SauceDemo:Fname,,SauceDemo
+15,lastName,"Click the [<Object>] ",Click,,,SauceDemo
+16,Synthetic Data,Generate a random last name,lastName,SauceDemo:lname,,
+17,lastName,Enter the value [<Data>] in the Field [<Object>],Fill,SauceDemo:lname,,SauceDemo
+18,postalCode,"Click the [<Object>] ",Click,,,SauceDemo
+19,postalCode,Enter the value [<Data>] in the Field [<Object>],Fill,@1121AC,,SauceDemo
+20,continue,"Click the [<Object>] ",Click,,,SauceDemo
+21,finish,"Click the [<Object>] ",Click,,,SauceDemo
+22,complete-header,Assert if [<Object>] contains the text [<Data>],assertElementContainsText,@Thank you for your order!,,SauceDemo
