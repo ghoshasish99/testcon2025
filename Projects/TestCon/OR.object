@@ -1,4 +1,4 @@
-<Root type="OR" ref="DevOpsDays">
+<Root type="OR" ref="TestCon">
   <Page title="" ref="Purchase">
     <ObjectGroup ref="Product To Select">
       <Object frame="" ref="Product To Select">
@@ -458,6 +458,36 @@
         <Property value="[data-test=&quot;complete-header&quot;]" ref="css" pref="4"/>
         <Property value="" ref="Placeholder" pref="5"/>
         <Property value="" ref="Label" pref="6"/>
+        <Property value="" ref="AltText" pref="7"/>
+        <Property value="" ref="Title" pref="8"/>
+        <Property value="" ref="TestId" pref="9"/>
+        <Property value="" ref="ChainedLocator" pref="10"/>
+      </Object>
+    </ObjectGroup>
+  </Page>
+  <Page title="" ref="Booking">
+    <ObjectGroup ref="Book Now">
+      <Object frame="" ref="Book Now">
+        <Property value="" ref="Role" pref="1"/>
+        <Property value="" ref="Text" pref="2"/>
+        <Property value="" ref="Label" pref="3"/>
+        <Property value="" ref="Placeholder" pref="4"/>
+        <Property value="(//a[text()=&quot;Book now&quot;])[1]" ref="xpath" pref="5"/>
+        <Property value="" ref="css" pref="6"/>
+        <Property value="" ref="AltText" pref="7"/>
+        <Property value="" ref="Title" pref="8"/>
+        <Property value="" ref="TestId" pref="9"/>
+        <Property value="" ref="ChainedLocator" pref="10"/>
+      </Object>
+    </ObjectGroup>
+    <ObjectGroup ref="Check Availability">
+      <Object frame="" ref="Check Availability">
+        <Property value="" ref="Role" pref="1"/>
+        <Property value="" ref="Text" pref="2"/>
+        <Property value="" ref="Label" pref="3"/>
+        <Property value="" ref="Placeholder" pref="4"/>
+        <Property value="//button[text()=&quot;Check Availability&quot;]" ref="xpath" pref="5"/>
+        <Property value="" ref="css" pref="6"/>
         <Property value="" ref="AltText" pref="7"/>
         <Property value="" ref="Title" pref="8"/>
         <Property value="" ref="TestId" pref="9"/>

@@ -1,0 +1,53 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Browser,Open the Url [<Data>] in the Browser,Open,@https://automationintesting.online/,,
+2,Browser,Set Endpoint for mocking request,RouteFulfillEndpoint,@https://automationintesting.online/api/room?checkin=2025-10-20&checkout=2025-10-21,,
+//3,Browser,Block Request,RouteAbort,,,
+4,Browser,Set Endpoint for mocking request,RouteFulfillSetBody,"{
+    ""rooms"": [
+        {
+            ""roomid"": 1,
+            ""roomName"": ""101"",
+            ""type"": ""Single"",
+            ""accessible"": true,
+            ""image"": ""/images/room1.jpg"",
+            ""description"": ""A room"",
+            ""features"": [
+                ""TV"",
+                ""WiFi"",
+                ""Safe""
+            ],
+            ""roomPrice"": 121
+        },
+        {
+            ""roomid"": 2,
+            ""roomName"": ""102"",
+            ""type"": ""Double"",
+            ""accessible"": true,
+            ""image"": ""/images/room2.jpg"",
+            ""description"": ""Another Room"",
+            ""features"": [
+                ""TV"",
+                ""Radio"",
+                ""Safe""
+            ],
+            ""roomPrice"": 151
+        },
+        {
+            ""roomid"": 3,
+            ""roomName"": ""103"",
+            ""type"": ""Suite"",
+            ""accessible"": true,
+            ""image"": ""/images/room3.jpg"",
+            ""description"": ""Yet Another Room"",
+            ""features"": [
+                ""Radio"",
+                
+                ""Safe""
+            ],
+            ""roomPrice"": 226
+        }
+    ]
+}",,
+*5,Check Availability,"Click the [<Object>] ",Click,,,Booking
+//6,Book Now,"Click the [<Object>] ",Click,,,Booking
+*7,General,Wait for [<Data>] milli seconds,pause,@1,,
