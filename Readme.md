@@ -1,3 +1,5 @@
+[![Test Execution](https://github.com/ghoshasish99/testcon2025/actions/workflows/maven.yml/badge.svg)](https://github.com/ghoshasish99/testcon2025/actions/workflows/maven.yml)
+
 # INGenious Playwright Studio - Test Automation for Everyone
 
 ## **Getting Started**
@@ -96,6 +98,20 @@ Before you begin, its important that you [Know the Framework](https://ing-bank.g
 
 ### URLs used in this workshop:
 
+| Flow Type             | URL                          |
+|-----------------------|------------------------------|
+| Standard flow         | https://www.saucedemo.com/   |
+| Data Driven Approach  | https://www.saucedemo.com/   |
+| Synthetic Data        | https://ecommerce-playground.lambdatest.io/ |
+| Storage State         | https://ecommerce-playground.lambdatest.io/ |
+| Mocking               | https://automationintesting.online/ |
+| Browser Context       | https://opensource-demo.orangehrmlive.com/web/index.php/auth/login |
+| Video + Traces        | https://www.saucedemo.com/ |
+| Performance Test      | https://www.saucedemo.com/ |
+| API Testing           | https://api.practicesoftwaretesting.com/api/documentation#/ (Payments, Create User, Brands) |
+| API + UI              | https://practicesoftwaretesting.com/auth/login |
+| Mobile Testing        | |
 
+Overall : https://github.com/testsmith-io/practice-software-testing?tab=readme-ov-file
 
  
