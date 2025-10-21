@@ -1,0 +1,26 @@
+import com.microsoft.playwright.*;
+import com.microsoft.playwright.options.*;
+import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
+import java.util.*;
+
+public class Example {
+  public static void main(String[] args) {
+    try (Playwright playwright = Playwright.create()) {
+      Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions()
+        .setHeadless(false));
+      BrowserContext context = browser.newContext();
+      Page page = context.newPage();
+      page.navigate("https://ecommerce-playground.lambdatest.io/index.php?route=account/login");
+      page.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("E-Mail Address")).click();
+      page.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("E-Mail Address")).fill("https://ecommerce-playground.lambdatest.io/index.php?route=account/login");
+      page.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("E-Mail Address")).press("ControlOrMeta+z");
+      page.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("E-Mail Address")).fill("");
+      page.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("E-Mail Address")).click();
+      page.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("E-Mail Address")).fill("hai.bins@hotmail.com");
+      page.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("Password")).click();
+      page.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("Password")).click();
+      page.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("Password")).fill("Ash123");
+      page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Login")).click();
+    }
+  }
+}

@@ -1,0 +1,65 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Browser,Open the Url [<Data>] in the Browser,Open,@https://automationintesting.online/,,
+*2,Browser,Set Endpoint for mocking request,RouteFulfillEndpoint,@https://automationintesting.online/api/room?checkin=2025-10-21&checkout=2025-10-22,,
+3,Browser,Set body for mocking request,RouteFulfillSetBody,"{
+    ""rooms"": [
+        {
+            ""roomid"": 1,
+            ""roomName"": ""101"",
+            ""type"": ""Single"",
+            ""accessible"": true,
+            ""image"": ""/images/room1.jpg"",
+            ""description"": ""A room"",
+            ""features"": [
+                ""TV"",
+                ""WiFi""
+    
+            ],
+            ""roomPrice"": 99
+        },
+        {
+            ""roomid"": 2,
+            ""roomName"": ""102"",
+            ""type"": ""Double"",
+            ""accessible"": true,
+            ""image"": ""/images/room2.jpg"",
+            ""description"": ""Another Room"",
+            ""features"": [
+                ""TV"",
+                ""Radio"",
+                ""Safe""
+            ],
+            ""roomPrice"": 149
+        },
+        {
+            ""roomid"": 3,
+            ""roomName"": ""103"",
+            ""type"": ""Suite"",
+            ""accessible"": true,
+            ""image"": ""/images/room3.jpg"",
+            ""description"": ""Yet Another Room"",
+            ""features"": [
+                ""Radio"",
+                ""WiFi"",
+                ""Safe""
+            ],
+            ""roomPrice"": 224
+        },
+        {
+            ""roomid"": 4,
+            ""roomName"": ""107"",
+            ""type"": ""Double"",
+            ""accessible"": true,
+            ""image"": ""https://www.mwtestconsultancy.co.uk/img/room1.jpg"",
+            ""description"": ""Please enter a description for this room"",
+            ""features"": [
+                ""WiFi"",
+                ""TV"",
+                ""Radio""
+            ],
+            ""roomPrice"": 160
+        }
+    ]
+}",,
+4,CheckAvailabity,"Click the [<Object>] ",Click,,,Booking
+*5,General,Wait for [<Data>] milli seconds,pause,@1,,

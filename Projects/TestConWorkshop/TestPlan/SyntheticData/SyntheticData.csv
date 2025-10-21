@@ -1,0 +1,17 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Browser,,Open,@https://ecommerce-playground.lambdatest.io/index.php?route=account/register,,
+2,First Name*,,Click,,,SyntheticData
+3,First Name*,,Fill,@Ashish,,SyntheticData
+4,Last Name*,,Click,,,SyntheticData
+5,Last Name*,,Fill,@Ghosh,,SyntheticData
+6,E-Mail*,,Click,,,SyntheticData
+7,E-Mail*,,Fill,@testcon2025xyz@gmail.com,,SyntheticData
+8,Telephone*,,Click,,,SyntheticData
+9,Telephone*,,Fill,@645645789,,SyntheticData
+10,Password*,,Click,,,SyntheticData
+11,Password*,,Fill,@testcon@12345,,SyntheticData
+12,Password Confirm*,,Click,,,SyntheticData
+13,Password Confirm*,,Fill,@testcon@12345,,SyntheticData
+14,I have read and agree to the,,Click,,,SyntheticData
+15,Continue,,Click,,,SyntheticData
+16,Refactor_Object,,assertElementContainsText,@Your Account Has Been Created!,,SyntheticData

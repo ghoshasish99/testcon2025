@@ -114,4 +114,6 @@ Before you begin, its important that you [Know the Framework](https://ing-bank.g
 
 Overall : https://github.com/testsmith-io/practice-software-testing?tab=readme-ov-file
 
+
+Thanks for attending! Happy Testing!!
  

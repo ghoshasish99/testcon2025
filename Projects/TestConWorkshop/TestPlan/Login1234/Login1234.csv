@@ -1,0 +1,8 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Browser,Open the Url [<Data>] in the Browser,Open,@https://ecommerce-playground.lambdatest.io/index.php?route=account/login,,
+2,E-Mail Address,"Click the [<Object>] ",Click,,,Login1234
+3,E-Mail Address,Enter the value [<Data>] in the Field [<Object>],Fill,@hai.bins@hotmail.com,,Login1234
+4,Password,"Click the [<Object>] ",Click,,,Login1234
+5,Password,Enter the value [<Data>] in the Field [<Object>],Fill,@Ash123,,Login1234
+6,Login,"Click the [<Object>] ",Click,,,Login1234
+7,Browser,Store Storage State in JSON file,StoreStorageState,@./state.json,,

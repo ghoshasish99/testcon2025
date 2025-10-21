@@ -1,0 +1,3 @@
+Scenario,Flow,Iteration,SubIteration,Product,FName,LName,PostCode,ProductValue
+Purchase,Purchase,1,1,Sauce Labs Bolt T-Shirt,Ashish,Ghosh,1131KE,sauce-labs-bolt-t-shirt
+Purchase,Purchase,2,1,Sauce Labs Bike Light,Ashish,Ghosh,1131KE,sauce-labs-bike-light

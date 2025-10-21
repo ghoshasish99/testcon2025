@@ -1,0 +1,5 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,add-to-cart-sauce-labs-bolt-t-shirt,Set object [<Object>] property  as [<Data>] at runtime,setObjectProperty,SauceDemo:ProductValue,"#product",Purchase
+2,add-to-cart-sauce-labs-bolt-t-shirt,"Click the [<Object>] ",Click,,,Purchase
+3,shopping-cart-link,"Click the [<Object>] ",Click,,,Purchase
+4,inventory-item-name,Assert if [<Object>] contains the text [<Data>],assertElementContainsText,SauceDemo:Product,,Purchase

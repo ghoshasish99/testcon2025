@@ -1,0 +1,22 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Browser,Open the Url [<Data>] in the Browser,Open,@https://ecommerce-playground.lambdatest.io/index.php,,
+2,My Account,"Click the [<Object>] ",MouseHover,,,SD
+3,Register,"Click the [<Object>] ",Click,,,SD
+4,First Name*,"Click the [<Object>] ",Click,,,SD
+5,Synthetic Data,Generate a random first name,firstName,SynData:FName,,
+6,First Name*,Enter the value [<Data>] in the Field [<Object>],Fill,SynData:FName,,SD
+7,Last Name*,"Click the [<Object>] ",Click,,,SD
+8,Synthetic Data,Generate a random last name,lastName,SynData:LName,,
+9,Last Name*,Enter the value [<Data>] in the Field [<Object>],Fill,SynData:LName,,SD
+10,E-Mail*,"Click the [<Object>] ",Click,,,SD
+11,Synthetic Data,Generate a random email address,emailAddress,SynData:Email,,
+12,E-Mail*,Enter the value [<Data>] in the Field [<Object>],Fill,SynData:Email,,SD
+13,Telephone*,"Click the [<Object>] ",Click,,,SD
+14,Telephone*,Enter the value [<Data>] in the Field [<Object>],Fill,@65765673,,SD
+15,Password*,"Click the [<Object>] ",Click,,,SD
+16,Password*,Enter the value [<Data>] in the Field [<Object>],Fill,@Ash123,,SD
+17,Password Confirm*,"Click the [<Object>] ",Click,,,SD
+18,Password Confirm*,Enter the value [<Data>] in the Field [<Object>],Fill,@Ash123,,SD
+19,Refactor_Object,"Click the [<Object>] ",Click,,,SD
+20,Continue,"Click the [<Object>] ",Click,,,SD
+21,Refactor_Object_1,Assert if [<Object>] contains the text [<Data>],assertElementContainsText,@Your Account Has Been Created!,,SD

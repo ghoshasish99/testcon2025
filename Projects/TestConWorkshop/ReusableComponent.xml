@@ -1,0 +1,10 @@
+<Root ref="TestConWorkshop" type="RC">
+    <Folder ref="New Group">
+        <Scenario ref="Purchase">
+            <TestCase exeType="Executable" ref="Finish"/>
+            <TestCase exeType="Executable" ref="Add to Cart"/>
+            <TestCase exeType="Executable" ref="CheckOut"/>
+            <TestCase exeType="Executable" ref="Login"/>
+        </Scenario>
+    </Folder>
+</Root>
